@@ -1,0 +1,27 @@
+h1 {
+	color: blue;
+	font-size: 36px;
+}
+
+textarea {
+	height: 100px;
+	width: 400px;
+}
+
+#submit-this {
+	border-style: solid;
+	border-color: black;
+}
+
+#submit-this:hover {
+	color: white;
+	background-color: #4acd03;
+}
+
+.well {
+	padding: 5px;
+}
+
+.message:hover {
+	background-color: lightgray;
+}
