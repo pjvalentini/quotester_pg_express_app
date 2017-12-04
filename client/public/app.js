@@ -20,9 +20,15 @@ $(document).ready(function() {
 			dataType: 'json',
 			data: JSON.stringify(quotesObj),
 			contentType: 'application/json',
-		}).then(function(res) {
-			console.log(res);
+		}).then(function(resAddQuote) {
+			console.log(resAddQuote);
+			if (resAddQuote == "null_message") {  // eslint-disable-line
+				alert("Please Enter Quote");
+			}
+			// appendQuotester();
 		});
+		$('#name-input').val("");
+		$('#message-input').val("");
 	});
 });
 

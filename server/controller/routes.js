@@ -46,7 +46,7 @@ router.post('/api/quote', (req, res) => {
 	} else if (req.body.name === ''  & req.body.quote !== '') {
 		var queryTwo = "INSERT INTO bulletinboard (name, quote) VALUES ($1, $2)";
 		pgClient.query(queryTwo, ["Anonymous", req.body.quote], (error, enterQuoteButNoName) => {
-			console.log(enterQuoteButNoName);
+			// console.log(enterQuoteButNoName);
 			if (error) {
 				res.json(error);
 			} else {
