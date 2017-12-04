@@ -30,7 +30,19 @@ router.get('/', function(req, res) {
 
 // POST Route
 router.post('/api/quote', (req, res) => {
-	console.log(req.body);
+		// console.log(req.body); shows me the user input.
+// checking that the user does not leave both fields blank then submits.
+	if (req.body.name !== '' && req.body.quote !== '') {
+		var query = 'INSERT into bulletinboard (name, quote) VALUES ($1, $2)';
+		pgClient.query(query, [req.body.name, req.body.quote], (error, enterQuote) => {
+			console.log(enterQuote);
+			if (error) {
+				res.json(error); // if error, send error to client.
+			} else {
+				res.json(enterQuote); // if no err, send back an obj to the client.
+			}
+		});
+	}
 });
 
 
