@@ -59,8 +59,40 @@ router.post('/api/quote', (req, res) => {
 });
 
 // Get Route 2
+router.get('/api/quotes', (req, res) => {
+	var queryThree = 'SELECT * FROM bulletinboard';
+	pgClient.query(queryThree, (error, getQuote) => {
+		console.log(getQuote);
+		if (error) {
+			res.json(error);
+		} else {
+			res.json(getQuote);
+		}
+ 	});
+});
 
+// DELETE Route
+router.delete('/api/delete-quote/:id', (req, res) => {
+	pgClient.query('DELETE FROM bulletinboard WHERE id=' + req.params.id, (err, res) => {
+		console.log(res);
+		console.log(req.params.id);
+		if (err) {
+			console.log(err);
+		}
+	});
+});
 
+// PUT Route
+router.put('/api/update-quote/:id', (req, res) => {
+	// console.log(req.body);
+	pgClient.query('UPDATE bulletinboard SET quote=$1 WHERE id=' + req.params.id, [req.body.quote], (err, results) => {
+		// console.log(results); shows me the result of the quote post from the questbook table.
+		if (err) {
+			res.json(err);
+		}
+		res.json({ message: "Message Updated" });
+	});
+});
 
 // Export this function this for the server connection to take hold
 module.exports = router;
