@@ -1,0 +1,5 @@
+CREATE TABLE bulletinboard (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(255) DEFAULT 'Guest',
+	message VARCHAR(3000) NOT NULL
+);
