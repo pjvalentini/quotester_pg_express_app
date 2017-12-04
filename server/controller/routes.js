@@ -28,6 +28,11 @@ router.get('/', function(req, res) {
 	res.sendFile(path.join(__dirname, '../../client/public/index.html'));
 });
 
+// POST Route
+router.post('/api/quote', (req, res) => {
+	console.log(req.body);
+});
 
-// Export this function this for the connection to take hold
+
+// Export this function this for the server connection to take hold
 module.exports = router;
