@@ -35,15 +35,31 @@ router.post('/api/quote', (req, res) => {
 	if (req.body.name !== '' && req.body.quote !== '') {
 		var query = 'INSERT into bulletinboard (name, quote) VALUES ($1, $2)';
 		pgClient.query(query, [req.body.name, req.body.quote], (error, enterQuote) => {
-			console.log(enterQuote);
+			// console.log(enterQuote);
 			if (error) {
 				res.json(error); // if error, send error to client.
 			} else {
 				res.json(enterQuote); // if no err, send back an obj to the client.
 			}
 		});
+// if name blank and message not blank then name becomes "Guest".
+	} else if (req.body.name === ''  & req.body.quote !== '') {
+		var queryTwo = "INSERT INTO bulletinboard (name, quote) VALUES ($1, $2)";
+		pgClient.query(queryTwo, ["Anonymous", req.body.quote], (error, enterQuoteButNoName) => {
+			console.log(enterQuoteButNoName);
+			if (error) {
+				res.json(error);
+			} else {
+				res.json(enterQuoteButNoName);
+			}
+		});
+	} else if ((req.body.name !== '' && req.body.quote === '') || (req.body.name === '' && req.body.quote === '')) {
+		res.json("null_message");
 	}
 });
+
+// Get Route 2
+
 
 
 // Export this function this for the server connection to take hold
