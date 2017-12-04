@@ -21,3 +21,5 @@ For this project, let's recreate this past time activity by developing a website
               *  id	serial primary key
               *  title	text
               *  body	text
+
+To run the program type - npm start
