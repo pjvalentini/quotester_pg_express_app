@@ -1,7 +1,6 @@
 // dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
-var chalk = require('chalk');
 
 // imported from the routes that you exported from routes.js
 var routes = require('./controller/routes.js');
@@ -26,5 +25,5 @@ var PORT = process.env.PORT || 8000;
 
 // runs your server and has it listen on a port
 app.listen(PORT, function() {
-	console.log(chalk.magentaBright('My Guestbook is listening on PORT') + " " + chalk.cyan.bold(PORT));
+	console.log('Quotester is listening on PORT'  + " "  + PORT);
 });

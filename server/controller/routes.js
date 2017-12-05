@@ -62,7 +62,7 @@ router.post('/api/quote', (req, res) => {
 router.get('/api/quotes', (req, res) => {
 	var queryThree = 'SELECT * FROM bulletinboard';
 	pgClient.query(queryThree, (error, getQuote) => {
-		console.log(getQuote);
+		// console.log(getQuote);
 		if (error) {
 			res.json(error);
 		} else {
@@ -74,8 +74,8 @@ router.get('/api/quotes', (req, res) => {
 // DELETE Route
 router.delete('/api/delete-quote/:id', (req, res) => {
 	pgClient.query('DELETE FROM bulletinboard WHERE id=' + req.params.id, (err, res) => {
-		console.log(res);
-		console.log(req.params.id);
+		// console.log(res);
+		// console.log(req.params.id);
 		if (err) {
 			console.log(err);
 		}
