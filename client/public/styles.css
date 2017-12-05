@@ -12,6 +12,14 @@ h1 {
 	background: #a80707;
 }
 
+.spanHeaderTag {
+	font-size: 30px;
+}
+
+.text-center {
+	font-size: 30px;
+}
+
 .nameLabel {
 	font-size: 40px;
 	color: #a80707;
@@ -74,6 +82,13 @@ textarea {
 #submit-this:hover {
 	color: white;
 	background-color: #4acd03;
+}
+
+.scrollDown {
+	font-weight: bold;
+	color: #000;
+	font-size: 25px;
+
 }
 
 .well {

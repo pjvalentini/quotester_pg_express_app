@@ -46,7 +46,7 @@ $(document).ready(function() {
 			quotes.rows.sort(function(a, b) {
 // this sets the order and sorts id's from from the db (id's in this case).
 // sorting and object by id's and the placement of the post will stay where is was originally.
-				return a.id - b.id;
+				return b.id - a.id;
 			});
 // looping through the array.
 			for (var i = 0 ; i < quotes.rows.length; i++) {
