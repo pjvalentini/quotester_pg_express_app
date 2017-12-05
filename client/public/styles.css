@@ -5,7 +5,7 @@ body {
 h1 {
 	font-family: "Bungee Hairline";
 	color: #ffffff;
-	font-size: 50px;
+	font-size: 65px;
 	text-align: left;
 	padding-left: 40px;
 	margin-top: 35px;
@@ -13,12 +13,12 @@ h1 {
 }
 
 .nameLabel {
-	font-size : 50px;
+	font-size: 40px;
 	color: #a80707;
 }
 
 .quoteLabel {
-	font-size : 50px;
+	font-size: 40px;
 	color: #a80707;
 }
 
@@ -28,6 +28,22 @@ h1 {
 	height: 50px;
 	width: 400px;
 
+}
+
+#quote-update-input {
+	font-size: 25px;
+}
+
+.enter-button {
+	background-color: #a80707;
+	color: white;
+	font-size: 20px;
+	border: solid 1px #dedede;
+}
+
+.enter-button:hover {
+	background-color: #4acd03;
+	border: solid 1px #4acd03;
 }
 
 textarea {
@@ -43,13 +59,16 @@ textarea {
 }
 
 .quote {
-	font-size: 39px;
+	font-size: 50px;
 }
 
 #submit-this {
-	background-color: #dedede;
+	background-color: #a80707;
+	color: white;
 	border-style: solid;
-	border-color: black;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 2px;
 }
 
 #submit-this:hover {
@@ -69,3 +88,8 @@ textarea {
 .quote:hover {
 	background-color: lightgray;
 }
+
+/*#modal-input-div {
+	padding: 0px 0px 0px 0px;
+	background-color: slategray;
+}*/
