@@ -12,9 +12,38 @@ h1 {
 	background: #a80707;
 }
 
+.nameLabel {
+	font-size : 50px;
+	color: #a80707;
+}
+
+.quoteLabel {
+	font-size : 50px;
+	color: #a80707;
+}
+
+.name_input {
+	background-color: #dedede;
+	border-radius: 5px;
+	height: 50px;
+	width: 400px;
+
+}
+
 textarea {
+	text-decoration-color: #a80707;
+	background-color: #dedede;
+	border-radius: 5px;
 	height: 100px;
 	width: 400px;
+}
+
+.name {
+ 	font-size: 25px;
+}
+
+.quote {
+	font-size: 39px;
 }
 
 #submit-this {
@@ -30,6 +59,11 @@ textarea {
 
 .well {
 	padding: 5px;
+}
+
+.x-button {
+	background-color: black;
+	border: solid 1px black;
 }
 
 .quote:hover {

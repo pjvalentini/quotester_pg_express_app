@@ -94,5 +94,5 @@ router.put('/api/update-quote/:id', (req, res) => {
 	});
 });
 
-// Export this function this for the server connection to take hold
+// Export this function this for the server connection to take hold.
 module.exports = router;

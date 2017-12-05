@@ -57,7 +57,7 @@ $(document).ready(function() {
 				xButton.css({ padding: "0px 4px 0px 4px", float: 'right' });
 				xButton.text("X");
 // stores name and meesage in <p> tags.
-				nameP = $('<p>');
+				nameP = $('<p class="name">');
 				quoteP = $('<p class="quote" data-id=' + quotes.rows[i].id + '>');
 
 				nameP.text("Name: " + quotes.rows[i].name);
