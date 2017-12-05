@@ -1,6 +1,6 @@
 /* global $ */
 
-// Setting un an on.sumit function for the quotester form
+// Setting un an on.sumit function for the Quotester form
 $(document).ready(function() {
 	$('#quotester-form').on('submit', function(e) {
 		e.preventDefault();
@@ -122,8 +122,8 @@ $(document).ready(function() {
 				method: 'PUT',
 				url: '/api/update-quote/' + $(this).data('id'),
 				data: { quote: updatedquote },
-			}).then(function(res) {
-				// console.log(res);
+			}).then(function(quoteUpdate) {
+				// console.log(quoteUpdate);
 				appendQuotester();
 				$('#update-quote-modal').modal('toggle'); // modal is removed ater the update.
 			});

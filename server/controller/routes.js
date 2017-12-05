@@ -42,7 +42,7 @@ router.post('/api/quote', (req, res) => {
 				res.json(enterQuote); // if no err, send back an obj to the client.
 			}
 		});
-// if name blank and message not blank then name becomes "Guest".
+// if name blank and message not blank then name becomes "Anonymous".
 	} else if (req.body.name === ''  & req.body.quote !== '') {
 		var queryTwo = "INSERT INTO bulletinboard (name, quote) VALUES ($1, $2)";
 		pgClient.query(queryTwo, ["Anonymous", req.body.quote], (error, enterQuoteButNoName) => {
