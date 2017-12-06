@@ -104,7 +104,6 @@ textarea {
 	background-color: lightgray;
 }
 
-/*#modal-input-div {
-	padding: 0px 0px 0px 0px;
-	background-color: slategray;
-}*/
+#quote-update-input {
+	height: 200px;
+}
