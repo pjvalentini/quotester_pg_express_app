@@ -1,15 +1,16 @@
 body {
 	font-family: Bungee Hairline;
+	background: #000000;
 }
 
 h1 {
 	font-family: "Bungee Hairline";
-	color: white;
+	color: #000000;
 	font-size: 65px;
 	text-align: left;
 	padding-left: 40px;
 	margin-top: 35px;
-	background: #a80707;
+	background: #00ff03;
 }
 
 .spanHeaderTag {
@@ -17,46 +18,45 @@ h1 {
 }
 
 .text-center {
+	color: #00ff03;
 	font-size: 30px;
 }
 
 .nameLabel {
 	font-size: 40px;
-	color: #a80707;
+	color: #00ff03;
 }
 
 .quoteLabel {
 	font-size: 40px;
-	color: #a80707;
+	color: #00ff03;
+}
+
+#name-input {
+	color: #000;
 }
 
 .name_input {
-	background-color: #dedede;
+	background-color: #00ff03;
 	border-radius: 5px;
 	height: 50px;
 	width: 400px;
-
 }
 
 #quote-update-input {
 	font-size: 25px;
 }
 
-.enter-button {
-	background-color: #a80707;
-	color: white;
-	font-size: 20px;
-	border: solid 1px #dedede;
+.scrollDown {
+	font-weight: bold;
+	color: #00ff03;
+	font-size: 25px;
 }
 
-.enter-button:hover {
-	background-color: #4acd03;
-	border: solid 1px #4acd03;
-}
-
-textarea {
+.textArea {
+	color: #000;
 	text-decoration-color: #a80707;
-	background-color: #dedede;
+	background-color: #00ff03;
 	border-radius: 5px;
 	height: 100px;
 	width: 400px;
@@ -70,30 +70,29 @@ textarea {
 	font-size: 50px;
 }
 
+p.quote:hover {
+	color: #00ff03;
+	background-color: #000000;
+}
+
 #submit-this {
-	background-color: #a80707;
-	color: white;
-	border-style: solid;
+	background-color: #000000;
+	color: #00ff03;
+	border: solid 1px #00ff03;
 	font-size: 20px;
 	margin-top: 5px;
 	margin-bottom: 2px;
 }
 
 #submit-this:hover {
-	color: white;
-	background-color: #4acd03;
+	color: #000000;
+	background-color: #00ff03;
 }
 
-.scrollDown {
-	font-weight: bold;
-	color: #000;
-	font-size: 25px;
-
+.user-div {
+	background-color: #00ff03;
 }
 
-/*.user-div {
-	background-color: #e28b9e;
-}*/
 
 .well {
 	padding: 5px;
@@ -109,6 +108,8 @@ textarea {
 }
 
 #quote-update-input {
+	background-color: #00ff03;
+	color: #000000;
 	height: 150px;
 }
 
@@ -116,24 +117,40 @@ textarea {
 	color: #a80707;
 }
 
+.enter-button {
+	background-color: #000000;
+	border: solid 1px #00ff03;
+	color: #00ff03;
+	font-size: 20px;
+}
+
+.enter-button:hover {
+	background-color: #00ff03;
+	border: solid 1px #000000;
+	color: #000000;
+}
+
 .modal-header {
-	border-top: solid 10px #a4a4a4;
-	border-left: solid 10px #a4a4a4;
-	border-right: solid 10px #a4a4a4;
+	background-color: #000000;
+	border-top: solid 10px #00ff03;
+	border-left: solid 10px #00ff03;
+	border-right: solid 10px #00ff03;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 
 }
 
 .modal-body {
-	border-left: solid 10px #a4a4a4;
-	border-right: solid 10px #a4a4a4;
+	background-color: #000000;
+	border-left: solid 10px #00ff03;
+	border-right: solid 10px #00ff03;
 }
 
 .modal-footer {
+	background-color: #000000;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	border-left: solid 10px #a4a4a4;
-	border-right: solid 10px #a4a4a4;
-	border-bottom: solid 10px #a4a4a4;
+	border-left: solid 10px #00ff03;
+	border-right: solid 10px #00ff03;
+	border-bottom: solid 10px #00ff03;
 }
