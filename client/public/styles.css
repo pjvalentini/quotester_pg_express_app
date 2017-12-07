@@ -4,7 +4,7 @@ body {
 
 h1 {
 	font-family: "Bungee Hairline";
-	color: #ffffff;
+	color: white;
 	font-size: 65px;
 	text-align: left;
 	padding-left: 40px;
@@ -91,6 +91,10 @@ textarea {
 
 }
 
+/*.user-div {
+	background-color: #e28b9e;
+}*/
+
 .well {
 	padding: 5px;
 }
@@ -105,5 +109,31 @@ textarea {
 }
 
 #quote-update-input {
-	height: 200px;
+	height: 150px;
+}
+
+#quote-update-input:hover {
+	color: #a80707;
+}
+
+.modal-header {
+	border-top: solid 10px #a4a4a4;
+	border-left: solid 10px #a4a4a4;
+	border-right: solid 10px #a4a4a4;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+
+.modal-body {
+	border-left: solid 10px #a4a4a4;
+	border-right: solid 10px #a4a4a4;
+}
+
+.modal-footer {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-left: solid 10px #a4a4a4;
+	border-right: solid 10px #a4a4a4;
+	border-bottom: solid 10px #a4a4a4;
 }
