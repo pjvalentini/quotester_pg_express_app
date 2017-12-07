@@ -56,7 +56,7 @@ $(document).ready(function() {
 				xButton = $('<button class="btn btn-danger x-button" data-id=' + quotes.rows[i].id + '>');
 				xButton.css({ padding: "0px 4px 0px 4px", float: 'right' });
 				xButton.text("X");
-// stores name and meesage in <p> tags.
+// stores name and quote in <p> tags.
 				nameP = $('<p class="name">');
 				quoteP = $('<p class="quote" data-id=' + quotes.rows[i].id + '>');
 
@@ -128,7 +128,7 @@ $(document).ready(function() {
 				$('#update-quote-modal').modal('toggle'); // modal is removed ater the update.
 			});
 		} else {
-			alert ('Please Enter Text');
+			alert ('Please Enter A Quote');
 		}
 	});
 });
