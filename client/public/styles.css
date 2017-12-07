@@ -108,6 +108,7 @@ p.quote:hover {
 }
 
 #quote-update-input {
+	border-radius: 5px;
 	background-color: #00ff03;
 	color: #000000;
 	height: 150px;
