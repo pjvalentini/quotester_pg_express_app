@@ -4,13 +4,15 @@
 var pg = require('pg');
 
 // Pick the database to connect to;
-var dbUrl = {
+var localConn = {
 	user: process.argv.POSTGRES_USER,
 	password: process.argv.POSTGRES_PASSWORD,
 	database: 'quotester_app',
 	host: 'localhost',
 	port: 5432,
 };
+
+let dbUrl = process.env.DATABASE_URL || localConn;
 
 // Creating a client to connect to, which as you see, uses the object that we set up
 var pgClient = new pg.Client(dbUrl);
