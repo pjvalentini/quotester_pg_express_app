@@ -1,5 +1,5 @@
 body {
-	font-family: Bungee Hairline;
+	font-family: "Bungee Hairline";
 	background: #000000;
 }
 
@@ -92,7 +92,6 @@ p.quote:hover {
 .user-div {
 	background-color: #00ff03;
 }
-
 
 .well {
 	padding: 5px;

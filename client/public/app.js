@@ -1,4 +1,4 @@
-/* global $ */
+	/* global $ */
 
 // Setting un an on.sumit function for the Quotester form
 $(document).ready(function() {
